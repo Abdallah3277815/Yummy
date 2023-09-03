@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/spinner.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Yummy</title>
+</head>
+
+<body>
+
+
+    <!-- Loader  -->
+    <div class="loaderContainer">
+        <div class="hourglassBackground position-absolute">
+            <div class="hourglassContainer">
+              <div class="hourglassCurves"></div>
+              <div class="hourglassCapTop"></div>
+              <div class="hourglassGlassTop"></div>
+              <div class="hourglassSand"></div>
+              <div class="hourglassSandStream"></div>
+              <div class="hourglassCapBottom"></div>
+              <div class="hourglassGlass"></div>
+            </div>
+          </div>
+    </div>
+
+    <!-- End Loader  -->
+
+    <!-- Start Side Menu -->
+    <div class="side-nav-menu d-flex h-100 position-fixed ">
+        <div class="nav-tab d-flex flex-column justify-content-between h-100 p-4">
+            <div class="links">
+                <ul class="list-unstyled overflow-hidden">
+                    <li onclick="displaySearch()">Search</li>
+                    <li onclick="getCategories()">Categories</li>
+                    <li onclick="getArea()">Area</li>
+                    <li onclick="getIngredients()">Ingredients</li>
+                    <li onclick="showContacts()">Contact Us</li>
+                </ul>
+            </div>
+            <div class="nav-footer">
+                <div class="icons">
+                    <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"> <i class="fa-solid fa-globe"></i></a>
+                </div>
+                <div class="footer">
+                    <p>Copyright 2023 All Rights<br>Reserved</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="nav-header p-2 text-center d-flex flex-column justify-content-between bg-light">
+            <img src="./imgs/logo.png" alt="Logo">
+            <i class="fa-solid fa-align-justify fa-2x open-close-icon"></i>
+            <div class="d-flex flex-column ">
+                <i class="fa-solid fa-globe my-2"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- End Side Menu -->
+
+
+
+    <div class="search" id="searchCont">
+
+    </div>
+    <!-- Start Meals Container  -->
+    <div class="container px-5 p-3 ">
+        <div class="row g-3" id="mealsContainer">
+            <div class="inner-loader">
+                <div class="loaderContainer">
+                    <div class="hourglassBackground position-absolute">
+                        <div class="hourglassContainer">
+                          <div class="hourglassCurves"></div>
+                          <div class="hourglassCapTop"></div>
+                          <div class="hourglassGlassTop"></div>
+                          <div class="hourglassSand"></div>
+                          <div class="hourglassSandStream"></div>
+                          <div class="hourglassCapBottom"></div>
+                          <div class="hourglassGlass"></div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- End Meals Container  -->
+
+    
+    <!-- Start Search Section  -->
+    <!-- <div class="container w-75">
+        <div class="row py-4 search">
+            <div class="col-md-6">
+                <input type="text" name="" class="form-control" id="" placeholder="Search By Name">
+            </div>
+            <div class="col-md-6">
+                <input type="text" name="" class="form-control" id=""  placeholder="Search By First Letter">
+            </div>
+        </div>
+    </div> -->
+    <!-- End Search Section  -->
+
+
+    <!-- Start Contact Section  -->
+    <!-- <form action="">
+        <div class="container px-5 p-3 contact  vh-100 d-flex justify-content-center align-items-center flex-column ">
+            <div class="row w-75 g-4">
+                <div class="col-md-6">
+                    <input class="form-control" type="text" placeholder="Enter Your Name">
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control" type="text" placeholder="Enter Your Email">
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control" type="number" placeholder="Enter Your Phone">
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control" type="password" placeholder="Enter Your Password">
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control" type="password" placeholder="Enter Your Repassword">
+                </div>
+                <div class="col-md-6">
+                    <input class="form-control" type="number" placeholder="Enter Your Age">
+                </div>
+            </div>
+            <button class="btn btn-danger my-4" type="submit">Submit</button>
+
+        </div>
+    </form> -->
+    <!-- End Contact Section  -->
+
+
+
+    <script src="./js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
